@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application2</string>
+
+    <!-- User Roles for Signup/Login Spinners -->
+    <string-array name="roles">
+        <item>Student</item>
+        <item>University Supervisor</item>
+        <item>Company Supervisor</item>
+    </string-array>
+
+    <!-- Optional text strings for buttons and messages -->
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="role">Select Role</string>
+    <string name="select_student">Select a student</string>  <!-- ✅ Add this line -->
+</resources>

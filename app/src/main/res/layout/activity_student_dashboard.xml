@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- 🔹 Top bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Edit (top-left) -->
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="Edit Profile" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Logout (top-right) -->
+            <ImageButton
+                android:id="@+id/btnLogout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_lock_power_off"
+                android:contentDescription="Logout" />
+        </LinearLayout>
+
+        <!-- 🔹 Profile picture -->
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Picture"
+            android:adjustViewBounds="true" />
+
+        <!-- 🔹 Upload Picture -->
+        <Button
+            android:id="@+id/btnUploadPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Picture"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔹 Capture Profile Picture (added) -->
+        <Button
+            android:id="@+id/btnCaptureProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Picture"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔹 Full Name -->
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#FFD700"
+            android:textColorHint="#FFD700"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- 🔹 Reg No -->
+        <EditText
+            android:id="@+id/etRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#FFD700"
+            android:textColorHint="#FFD700"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp" />
+
+        <!-- 🔹 Student No -->
+        <EditText
+            android:id="@+id/etStudentNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#FFD700"
+            android:textColorHint="#FFD700"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp" />
+
+        <!-- 🔹 Program -->
+        <EditText
+            android:id="@+id/etProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#FFD700"
+            android:textColorHint="#FFD700"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔹 Save Profile -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50" />
+
+        <!-- 🔹 Internship tips (added) -->
+        <TextView
+            android:id="@+id/tipsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:padding="8dp"
+            android:text="Loading internship tips..."
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <!-- 🔹 View Feedback Button (added) -->
+        <Button
+            android:id="@+id/btnViewFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Feedback"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 🔹 Back to Login (logout) -->
+        <Button
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Login"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>

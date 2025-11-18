@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Log Entry"
+            android:textColor="#0D47A1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/etDay"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/field_yellow"
+            android:hint="Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ✅ Name Field -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/field_white"
+            android:hint="Full Name"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName" />
+
+        <!-- Registration Number -->
+        <EditText
+            android:id="@+id/etRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/field_blue"
+            android:hint="Registration Number"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E3F2FD"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- Activity Carried Out -->
+        <EditText
+            android:id="@+id/etActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:background="@drawable/field_white"
+            android:hint="Activity Carried Out"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Problem Encountered -->
+        <EditText
+            android:id="@+id/etProblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:background="@drawable/field_yellow"
+            android:hint="Problem Encountered"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Solutions -->
+        <EditText
+            android:id="@+id/etSolutions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:background="@drawable/field_yellow"
+            android:hint="Solutions"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Skills Gained -->
+        <EditText
+            android:id="@+id/etSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:background="@drawable/field_white"
+            android:hint="Skills Gained"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- ✅ Image Preview Below Buttons -->
+        <ImageView
+            android:id="@+id/ivEvidence"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="20dp"
+            android:background="#BDBDBD"
+            android:contentDescription="Uploaded Image"
+            android:scaleType="centerCrop" />
+        <!-- ✅ Upload & Capture Buttons (moved image below) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Upload Picture"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_green"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCapturePhoto"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Capture Photo"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_green"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSaveLog"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Submit Log"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_green"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Navigation Arrows -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_forward"
+                android:contentDescription="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

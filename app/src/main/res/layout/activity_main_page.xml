@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    tools:context=".MainPageActivity"
+    android:padding="24dp">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app"
+        android:contentDescription="App Logo"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Student Dashboard Button -->
+    <Button
+        android:id="@+id/btnStudentDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Dashboard"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Supervisor Dashboard Button -->
+    <Button
+        android:id="@+id/btnSupervisorDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supervisor Dashboard"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

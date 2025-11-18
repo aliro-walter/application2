@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 🧑 Supervisor Dashboard Title -->
+        <TextView
+            android:id="@+id/tvSupervisorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="University Supervisor Panel"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#0D47A1"
+            android:paddingBottom="16dp"/>
+        <!-- Back button -->
+        <Button
+            android:id="@+id/btnBackSupervisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/noStudentsMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No student has submitted a daily log yet."
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:padding="16dp"
+            android:background="#E3F2FD"/> <!-- light blue background -->
+
+        <!-- 👩‍🎓 Student List -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Students"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <ListView
+            android:id="@+id/studentListView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:divider="#64B5F6"
+            android:dividerHeight="1dp"
+            android:background="@android:color/white"
+            android:padding="6dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"/>
+
+        <!-- 📘 Student Logs -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Logs"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <ListView
+            android:id="@+id/logsListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="#90CAF9"
+            android:dividerHeight="1dp"
+            android:background="@android:color/white"
+            android:padding="6dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"/>
+
+        <!-- 🗒️ Feedback Section -->
+        <EditText
+            android:id="@+id/feedbackInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter feedback for selected student"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#64B5F6"/>
+
+        <Button
+            android:id="@+id/saveFeedbackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Feedback"
+            android:textStyle="bold"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:elevation="3dp"/>
+
+    </LinearLayout>
+</ScrollView>
