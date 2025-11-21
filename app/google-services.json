@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "334485396749",
+    "project_id": "digitaal-logbook",
+    "storage_bucket": "digitaal-logbook.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334485396749:android:93f42b01d0fcc7f49be444",
+        "android_client_info": {
+          "package_name": "com.walter.Logbook1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-fgL1MK1rkmfNuAnTA_CCVrYx-CPE1ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334485396749:android:327f20e4384212f19be444",
+        "android_client_info": {
+          "package_name": "com.walter.logbook1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-fgL1MK1rkmfNuAnTA_CCVrYx-CPE1ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334485396749:android:802169ea9c4e7bb69be444",
+        "android_client_info": {
+          "package_name": "com.walter.myinternshiplogbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-fgL1MK1rkmfNuAnTA_CCVrYx-CPE1ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,17 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace = "com.walter.myapplication2"
+    namespace = "com.walter.myinternshiplogbook"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.walter.myapplication2"
+        applicationId = "com.walter.myinternshiplogbook"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -47,8 +48,12 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
 
-    // ✅ JSoup for web scraping
+    // JSoup for web scraping
     implementation "org.jsoup:jsoup:1.16.1"
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    implementation 'com.google.firebase:firebase-firestore'
 
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.walter.myapplication2">
+    package="com.walter.myinternshiplogbook">
 
-    <!-- ✅ Permissions -->
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Declare camera hardware feature (not required) -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication2">
 
-        <!-- ✅ Entry point of the app -->
+        <!-- Entry point of the app -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -28,22 +32,34 @@
             </intent-filter>
         </activity>
 
-        <!-- ✅ User Authentication Activities -->
+        <!-- User Authentication Activities -->
         <activity android:name=".SignupActivity" android:exported="true" />
 
-        <!-- ✅ Student Activities -->
+        <!-- Student Activities -->
         <activity android:name=".StudentDashboardActivity" android:exported="true" />
         <activity android:name=".DailyLogEntryActivity" android:exported="true" />
+        <activity android:name=".NewsActivity" android:exported="true" />
 
-        <!-- ✅ Supervisor Activities -->
+        <!-- Supervisor Activities -->
         <activity android:name=".UniversitySupervisorActivity" android:exported="true" />
         <activity android:name=".CompanySupervisorActivity" android:exported="true" />
         <activity android:name=".SupervisorDashboardActivity" android:exported="true" />
 
-        <!-- ✅ Miscellaneous Activities -->
+        <!-- Miscellaneous Activities -->
         <activity android:name=".Feedback" android:exported="true" />
-        <activity android:name=".MainActivity2" android:exported="false" />
         <activity android:name=".MainPageActivity" android:exported="false" />
+
+        <!-- Service and Receiver -->
+        <service
+            android:name=".LogSyncService"
+            android:exported="false" />
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

@@ -111,7 +111,7 @@
             android:id="@+id/etSkills"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="55dp"
+            android.minHeight="55dp"
             android:background="@drawable/field_white"
             android:hint="Skills Gained"
             android:padding="14dp"
@@ -162,17 +162,38 @@
                 android:textSize="16sp"
                 android:layout_marginStart="8dp" />
         </LinearLayout>
-        <!-- Submit Button -->
-        <Button
-            android:id="@+id/btnSaveLog"
+
+        <!-- Submit and Share Buttons -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="Submit Log"
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false"
-            android:background="@drawable/btn_green"
-            android:textSize="18sp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSaveLog"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Submit Log"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_green"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnShareLog"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Share Log"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_blue"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
 
         <!-- Navigation Arrows -->
         <LinearLayout

@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.MyApplication2" parent="Base.Theme.MyApplication2" />
+
+    <!-- Alias the new theme name used in the manifest to the existing theme -->
+    <style name="Theme.myinternshiplogbook" parent="Theme.MyApplication2" />
 </resources>

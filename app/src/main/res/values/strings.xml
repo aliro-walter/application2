@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name">Digital Internlogbook</string>
 
     <!-- User Roles for Signup/Login Spinners -->
     <string-array name="roles">
